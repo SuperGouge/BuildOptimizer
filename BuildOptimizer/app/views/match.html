@@ -1,0 +1,21 @@
+﻿<div class="row">
+    <div class="item-set col-xs-4 col-xs-offset-4">
+        <div ng-if="block.items.length" ng-repeat="block in itemSet.blocks">
+            <h3>{{block.type}}</h3>
+            <span ng-if="match.data.stats.item0" ng-repeat="item in block.items"><img src="//ddragon.leagueoflegends.com/cdn/{{version}}/img/item/{{item.id}}.png" /></span>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <a ng-disabled="!url" class="btn btn-primary btn-item-set col-xs-2 col-xs-offset-5" download="BuildOptimizer-{{champion.key}}-{{match.matchId}}.json" ng-click="download()" ng-href="{{url}}">Download Item Set</a>
+</div>
+
+<div class="row">
+    <p class="col-xs-8 col-xs-offset-2">
+        Item Sets are to be put in your League of Legends installation folder:
+        "League of Legends\Config\Champions\{championKey}\Recommended\" for champion-specific item sets and
+        "League of Legends\Config\Global\Recommended\" otherwise.
+        More info at <a href="https://developer.riotgames.com/docs/item-sets">https://developer.riotgames.com/docs/item-sets</a>.
+    </p>
+</div>

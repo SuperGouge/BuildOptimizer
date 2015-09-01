@@ -1,0 +1,24 @@
+﻿<div class="row">
+    <img class="main-logo img-responsive" src="/img/logo.png" alt="BuildOptimizer" />
+</div>
+
+<div class="row">
+    <form class="form-inline col-xs-8 col-xs-offset-2 text-center" ng-submit="selectChampion(selectedChampion)">
+        <div class="form-group has-feedback">
+            <input type="text" ng-model="selectedChampion" placeholder="Select a champion" typeahead="champion.name for champion in champions | filter:{name:$viewValue} | limitTo:10" typeahead-on-select="selectChampion(selectedChampion)" typeahead-no-results="noResults" class="form-control">
+            <span ng-show="loading" class="glyphicon glyphicon-refresh form-control-feedback"></span>
+        </div>
+        <button type="submit" class="btn btn-default">Optimize my build</button>
+        <div ng-show="noResults">
+            <span class="glyphicon glyphicon-remove"></span> No Results Found
+        </div>
+    </form>
+</div>
+
+<footer class="row">
+    <div class="container">
+        <p class="text-muted">
+            BuildOptimizer isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends &copy; Riot Games, Inc.
+        </p>
+    </div>
+</footer>

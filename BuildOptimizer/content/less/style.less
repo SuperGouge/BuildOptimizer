@@ -1,0 +1,121 @@
+﻿body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.nav,
+.pagination,
+.carousel,
+.panel-title a {
+    cursor: pointer;
+}
+
+.navbar {
+    min-height: 50px;
+
+    .navbar-brand {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+        img {
+            max-height: 100%;
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #F5F5F5;
+
+    p {
+        margin: 0;
+    }
+}
+
+.main-logo {
+    max-height: 250px;
+    margin: 0 auto;
+}
+
+.tip {
+    font-size: 28px;
+    max-width: 30%;
+}
+
+.champion {
+    img {
+        margin-right: 20px;
+        float: left;
+    }
+}
+
+.matches {
+    margin: 20px auto;
+}
+
+.match {
+    position: relative;
+    height: 125px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: 15px auto;
+    padding: 15px;
+
+    &.lose {
+        opacity: 0.6;
+    }
+
+    .icon {
+        float: left;
+        height: 35px;
+        width: 35px;
+        margin-right: 5px;
+    }
+
+    .name {
+        float: left;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .score {
+        float: right;
+        font-weight: 500;
+    }
+
+    .kills {
+        color: forestgreen;
+    }
+
+    .deaths {
+        color: red;
+    }
+
+    .assists {
+        color: orange;
+    }
+
+    .build {
+        cursor: pointer;
+    }
+
+    h4 {
+        float: right;
+        margin: -3px 0 0 10px;
+    }
+
+    h5 {
+        text-transform: uppercase;
+    }
+}
+
+.item-set,
+.btn-item-set {
+    margin-bottom: 20px;
+}

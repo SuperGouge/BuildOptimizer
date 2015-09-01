@@ -126,7 +126,7 @@ function asArray(matchlist) {
         for (var summonerId in summoners) {
             if (summoners.hasOwnProperty(summonerId)) {
                 array = (function(array, summonerId) {
-                    return array.concat(summoners[summonerId].map(function(match) {
+                    return array.concat((summoners[summonerId] || []).map(function(match) {
                         match.region = region;
                         match.summonerId = parseInt(summonerId, 10);
                         return match;

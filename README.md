@@ -40,7 +40,7 @@ Batch requests (retrieve top players' match lists in our case) are made asyncron
 ## Future Enhancements
 
 This entire project was built with flexibility and evolutivity in mind. The RiotApi helper class and most of the code are easily reusable by anyone.
-This also allows for a much better infrastructure to build of new features.
+This also allows for a much better infrastructure onto which new features can easily be built.
 
 To provide even better results, one of the main planned enhancements is to improve the match selection algorithm.
 An Item Set editor would also help the user fine-tune the ones provided.

@@ -10,7 +10,7 @@ var redis = require("../../config/redis");
 var regions = ["br", "eune", "euw", "kr", "lan", "las", "na", "oce", "ru", "tr"];
 var regionsPbe = regions.concat("pbe");
 
-var limiters = [new RateLimiter(10, 10 * 1000), new RateLimiter(500, 10 * 60 * 1000)];
+var limiters = [new RateLimiter(3000, 10 * 1000), new RateLimiter(180000, 10 * 60 * 1000)];
 
 var endpoints = {
     champion: { name: "champion", version: "v1.2", regions: regions },

@@ -79,12 +79,9 @@
     <Content Include="content\less\style.less" />
     <Content Include="package.json" />
     <Content Include="public\app\app.min.js.map" />
-    <Content Include="public\app\views\champion - Copy.html" />
     <Content Include="public\app\views\champion.html" />
     <Content Include="public\app\views\home.html" />
-    <Content Include="public\app\views\HTML1.html" />
     <Content Include="public\app\views\match.html" />
-    <Content Include="public\app\views\name.html" />
     <Content Include="public\favicon.ico" />
     <Content Include="public\img\icon.png" />
     <Content Include="public\img\logo.png" />
